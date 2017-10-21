@@ -12,11 +12,16 @@
     <code>
 $ sudo rpm --import http://repo.elbuilds.website:8000/pki/rpm-gpg/RPM-GPG-KEY-elbuilds
 <br>
-$ sudo yum install http://repo.elbuilds.website:8000/7/x86_64/Packages/elbuilds-release/latest/elbuilds-release-latest.el7.elbuilds.noarch.rpm
+$ sudo yum -y install http://repo.elbuilds.website:8000/7/x86_64/Packages/elbuilds-release/latest/elbuilds-release-latest.el7.elbuilds.noarch.rpm
+<br>
+$ sudo yum -y epel-release
 <br>
 $ sudo yum makecache
     </code>
   </p>
+  <p>Notice:</P>
+  <p><i>No i686 and multilib support.</i></p>
+  <br>
   <p>
 You can browse the repository <a href='http://repo.elbuilds.website:8000'>here</a>.
 Server's system information are available <a href='/cgi-bin/sysinfo.cgi'>here</a>.
